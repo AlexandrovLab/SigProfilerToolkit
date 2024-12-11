@@ -25,9 +25,9 @@ SigProfilerToolkit is a unified toolkit for mutational signature analysis, combi
 - **Assignment**: Assign extracted or known mutational signatures to samples using SigProfilerAssignment.
 - **Extraction**: Extract de novo mutational signatures using SigProfilerExtractor.
 
-## Python Installation
-### Local
-To install locally using pip:
+## Installation
+### Python
+To install in a Python environment using pip:
 ```bash
 pip install git+https://github.com/AlexandrovLab/SigProfilerToolkit.git@main
 ```
