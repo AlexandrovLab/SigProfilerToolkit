@@ -1,0 +1,34 @@
+{
+    "SigProfilerMatrixGenerator": {
+        "SBSs_DBSs_INDELs": {
+            "citation": "Bergstrom EN, Huang MN, Mahto U, Barnes M, Stratton MR, Rozen SG, and Alexandrov LB (2019). SigProfilerMatrixGenerator: a tool for visualizing and exploring patterns of small mutational events. *BMC Genomics* 20, Article number: 685.",
+            "url": "https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6041-2"
+        },
+        "SVs_CNVs": {
+            "citation": "Khandekar A, Vangara R, Barnes M, Díaz-Gay M, Abbasi A, Bergstrom EN, Steele CD, Pillay N, and Alexandrov LB (2023). Visualizing and exploring patterns of large mutational events with SigProfilerMatrixGenerator. *BMC Genomics* 24, Article number: 469.",
+            "url": "https://doi.org/10.1186/s12864-023-09584-y"
+        }
+    },
+    "SigProfilerPlotting": {
+        "SBSs_DBSs_INDELs": {
+            "citation": "Bergstrom EN, Huang MN, Mahto U, Barnes M, Stratton MR, Rozen SG, and Alexandrov LB (2019). SigProfilerMatrixGenerator: a tool for visualizing and exploring patterns of small mutational events. *BMC Genomics* 20, Article number: 685.",
+            "url": "https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6041-2"
+        },
+        "SVs_CNVs": {
+            "citation": "Khandekar A, Vangara R, Barnes M, Díaz-Gay M, Abbasi A, Bergstrom EN, Steele CD, Pillay N, and Alexandrov LB (2023). Visualizing and exploring patterns of large mutational events with SigProfilerMatrixGenerator. *BMC Genomics* 24, Article number: 469.",
+            "url": "https://doi.org/10.1186/s12864-023-09584-y"
+        }
+    },
+    "SigProfilerAssignment": {
+        "all_contexts": {
+            "citation": "Díaz-Gay, M., Vangara, R., Barnes, M., ... & Alexandrov, L. B. (2023). Assigning mutational signatures to individual samples and individual somatic mutations with SigProfilerAssignment. *Bioinformatics*, 2023-07.",
+            "url": "https://doi.org/10.1093/bioinformatics/btad756"
+        }
+    },
+    "SigProfilerExtractor": {
+        "all_contexts": {
+            "citation": "Islam SMA, Díaz-Gay M, Wu Y, Barnes M, Vangara R, Bergstrom EN, He Y, Vella M, Wang J, Teague JW, Clapham P, Moody S, Senkin S, Li YR, Riva L, Zhang T, Gruber AJ, Steele CD, Otlu B, Khandekar A, Abbasi A, Humphreys L, Syulyukina N, Brady SW, Alexandrov BS, Pillay N, Zhang J, Adams DJ, Martincorena I, Wedge DC, Landi MT, Brennan P, Stratton MR, Rozen SG, and Alexandrov LB (2022). Uncovering novel mutational signatures by _de novo_ extraction with SigProfilerExtractor. *Cell Genomics*.",
+            "url": "https://doi.org/10.1016/j.xgen.2022.100179"
+        }
+    }
+}

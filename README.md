@@ -16,6 +16,7 @@ SigProfilerToolkit is a unified toolkit for mutational signature analysis, combi
   - [SigProfilerPlotting](#sigprofilerplotting)
   - [SigProfilerAssignment](#sigprofilerassignment)
   - [SigProfilerExtractor](#sigprofilerextractor)
+- [Citations](#citations)
 - [License](#license)
 
 ## Features
@@ -24,7 +25,7 @@ SigProfilerToolkit is a unified toolkit for mutational signature analysis, combi
 - **Assignment**: Assign extracted or known mutational signatures to samples using SigProfilerAssignment.
 - **Extraction**: Extract de novo mutational signatures using SigProfilerExtractor.
 
-## Installation
+## Python Installation
 ### Local
 To install locally using pip:
 ```bash
@@ -110,16 +111,17 @@ For Singularity users, convert the Docker image to a Singularity image:
    --input_data ./21BRCA/21BRCA_vcf/output/SBS/example.SBS96.all \
    --output ./results/extraction \
    --minimum_signatures 3 \
-   --maximum_signatures 5 \
-   --nmf_replicates 5
+   --maximum_signatures 10
    ```
 
 ## SigProfilerToolkit Example Commands
 
+Call `SigProfilerToolkit` with the desired tool and command. The following are example commands for each tool:
+
 ### SigProfilerMatrixGenerator
 | Command                                   | Description                                                             |
 |-------------------------------------------|-------------------------------------------------------------------------|
-| `matrix_generator install <genome>`       | Install reference genome files (required to generate matrices).         |
+| `matrix_generator install <genome>`       | Install reference genome files (required to generate SBS, DBS, and INDEL matrices).         |
 | `matrix_generator matrix_generator <project> <genome> <input_path>` | Generate mutational matrices for SBSs, DBSs, and INDELs.                |
 | `matrix_generator sv_matrix_generator <project> <genome> <input_path>` | Generate structural variation (SV) matrices.                           |
 | `matrix_generator cnv_matrix_generator <project> <genome> <input_path>` | Generate copy number variation (CNV) matrices.                         |
@@ -144,6 +146,26 @@ For Singularity users, convert the Docker image to a Singularity image:
 | Command                                          | Description                                                              |
 |--------------------------------------------------|--------------------------------------------------------------------------|
 | `extractor sigprofilerextractor <input> <output>` | Extract de novo mutational signatures from matrix-formatted input samples. |
+
+## Citations
+
+### SigProfilerMatrixGenerator and SigProfilerPlotting
+- **For SBSs, DBSs, and INDELs:**
+
+  Bergstrom EN, Huang MN, Mahto U, Barnes M, Stratton MR, Rozen SG, and Alexandrov LB (2019) SigProfilerMatrixGenerator: a tool for visualizing and exploring patterns of small mutational events. *BMC Genomics* 20, Article number: 685.
+  [https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6041-2](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6041-2)
+
+- **For SVs and CNVs:**
+
+  Khandekar A, Vangara R, Barnes M, Díaz-Gay M, Abbasi A, Bergstrom EN, Steele CD, Pillay N, and Alexandrov LB (2023) Visualizing and exploring patterns of large mutational events with SigProfilerMatrixGenerator. *BMC Genomics* 24, Article number: 469.
+  [https://doi.org/10.1186/s12864-023-09584-y](https://doi.org/10.1186/s12864-023-09584-y)
+
+
+### SigProfilerAssignment
+Díaz-Gay, M., Vangara, R., Barnes, M., ... & Alexandrov, L. B. (2023). Assigning mutational signatures to individual samples and individual somatic mutations with SigProfilerAssignment, *Bioinformatics*, 2023-07. doi: [https://doi.org/10.1093/bioinformatics/btad756](https://doi.org/10.1093/bioinformatics/btad756)
+
+### SigProfilerExtractor
+Islam SMA, Díaz-Gay M, Wu Y, Barnes M, Vangara R, Bergstrom EN, He Y, Vella M, Wang J, Teague JW, Clapham P, Moody S, Senkin S, Li YR, Riva L, Zhang T, Gruber AJ, Steele CD, Otlu B, Khandekar A, Abbasi A, Humphreys L, Syulyukina N, Brady SW, Alexandrov BS, Pillay N, Zhang J, Adams DJ, Martincorena I, Wedge DC, Landi MT, Brennan P, Stratton MR, Rozen SG, and Alexandrov LB (2022) Uncovering novel mutational signatures by _de novo_ extraction with SigProfilerExtractor. *Cell Genomics*. doi: [10.1016/j.xgen.2022.100179](https://doi.org/10.1016/j.xgen.2022.100179).
 
 ## License
 Copyright (c) 2024, Alexandrov Lab [University of California, San Diego] All rights reserved.
