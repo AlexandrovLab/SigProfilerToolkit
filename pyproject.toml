@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SigProfilerToolkit"
+version = "0.1.0"
+description = "Unified toolkit for mutational signature analysis"
+authors = [{ name = "Mark Barnes", email = "mdbarnes@health.ucsd.edu" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "SigProfilerMatrixGenerator==1.2.31",
+    "SigProfilerPlotting==1.3.24",
+    "SigProfilerAssignment==0.1.9",
+    "SigProfilerExtractor==1.1.25"
+]
+keywords = ["mutational signatures", "genomics", "bioinformatics"]
+
+[project.urls]
+Source = "https://github.com/mdbarnesUCSD/SigProfilerToolkit"
+
+[project.scripts]
+SigProfilerToolkit = "SigProfilerToolkit.SigProfilerToolkit_CLI:main"
+
+[tool.setuptools.package-data]
+SigProfilerToolkit = ["data/citations.json"]
