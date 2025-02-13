@@ -14,27 +14,43 @@ contourpy==1.3.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
+filelock==3.17.0
+    # via torch
 fonttools==4.55.2
     # via matplotlib
+fsspec==2025.2.0
+    # via torch
 grapheme==0.6.0
     # via alive-progress
+jinja2==3.1.5
+    # via torch
 joblib==1.4.2
     # via scikit-learn
 kiwisolver==1.4.7
     # via matplotlib
+markupsafe==3.0.2
+    # via jinja2
 matplotlib==3.9.3
     # via
     #   sigprofilermatrixgenerator
     #   sigprofilerplotting
+mpmath==1.3.0
+    # via sympy
+networkx==3.4.2
+    # via torch
+nimfa==1.4.0
+    # via sigprofilerextractor
 numpy==1.26.4
     # via
     #   contourpy
     #   matplotlib
+    #   nimfa
     #   pandas
     #   patsy
     #   scikit-learn
     #   scipy
     #   sigprofilerassignment
+    #   sigprofilerextractor
     #   sigprofilermatrixgenerator
     #   statsmodels
 packaging==24.2
@@ -44,6 +60,7 @@ packaging==24.2
 pandas==1.5.3
     # via
     #   sigprofilerassignment
+    #   sigprofilerextractor
     #   sigprofilermatrixgenerator
     #   sigprofilerplotting
     #   statsmodels
@@ -54,6 +71,8 @@ pillow==11.0.0
     #   matplotlib
     #   reportlab
     #   sigprofilerplotting
+psutil==7.0.0
+    # via sigprofilerextractor
 pymupdf==1.25.0
     # via sigprofilerassignment
 pyparsing==3.2.0
@@ -69,27 +88,45 @@ pytz==2024.2
 reportlab==4.2.5
     # via sigprofilerassignment
 scikit-learn==1.6.0
-    # via sigprofilerplotting
+    # via
+    #   sigprofilerextractor
+    #   sigprofilerplotting
 scipy==1.14.1
     # via
+    #   nimfa
     #   scikit-learn
     #   sigprofilerassignment
+    #   sigprofilerextractor
     #   sigprofilermatrixgenerator
     #   statsmodels
 sigprofilerassignment==0.1.9
-    # via SigProfilerToolkit (setup.py)
+    # via
+    #   SigProfilerToolkit (pyproject.toml)
+    #   sigprofilerextractor
+sigprofilerextractor==1.1.25
+    # via SigProfilerToolkit (pyproject.toml)
 sigprofilermatrixgenerator==1.2.31
     # via
-    #   SigProfilerToolkit (setup.py)
+    #   SigProfilerToolkit (pyproject.toml)
     #   sigprofilerassignment
+    #   sigprofilerextractor
 sigprofilerplotting==1.3.24
     # via
-    #   SigProfilerToolkit (setup.py)
+    #   SigProfilerToolkit (pyproject.toml)
     #   sigprofilerassignment
+    #   sigprofilerextractor
     #   sigprofilermatrixgenerator
 six==1.17.0
     # via python-dateutil
 statsmodels==0.14.4
-    # via sigprofilermatrixgenerator
+    # via
+    #   sigprofilerextractor
+    #   sigprofilermatrixgenerator
+sympy==1.13.3
+    # via torch
 threadpoolctl==3.5.0
     # via scikit-learn
+torch==2.2.2
+    # via sigprofilerextractor
+typing-extensions==4.12.2
+    # via torch
